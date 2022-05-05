@@ -115,9 +115,17 @@ const StudentsLoginScreen = () => {
             onChange={(e) => setPassword(e.target.value)}
           ></Form.Control>
           {mode === "password" ? (
-            <VisibilityIcon className="icon" onClick={handleClick} />
+            <VisibilityIcon
+              style={{
+                display: "flex",
+                position: "relative",
+                top: "-30px",
+                float: "right",
+              }}
+              onClick={handleClick}
+            />
           ) : (
-            <VisibilityOff className="icon" onClick={handleClick} />
+            <VisibilityOff onClick={handleClick} />
           )}
         </Form.Group>
 

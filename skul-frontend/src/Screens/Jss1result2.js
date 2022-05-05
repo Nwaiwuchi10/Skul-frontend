@@ -1,28 +1,19 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 
-import { LinkContainer } from "react-router-bootstrap";
-import {
-  Table,
-  Button,
-  Row,
-  Col,
-  Container,
-  Image,
-  ListGroup,
-} from "react-bootstrap";
-import SignaturePad from "react-signature-canvas";
+import { Table, Row, Col, Container, Image } from "react-bootstrap";
+// import SignaturePad from "react-signature-canvas";
 import "./Jss1result.css";
-import { useReactToPrint } from "react-to-print";
+// import { useReactToPrint } from "react-to-print";
 // import Paginate from "../Components/Paginate";
-import ReactToPrint from "react-to-print";
+// import ReactToPrint from "react-to-print";
 
 import axios from "axios";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
-import Signature from "../Components/Signature";
+// import Signature from "../Components/Signature";
 
 const Jss1result2 = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   // const componentRef = useRef();
   // let sigPad = useRef({});
   // let data = "";
@@ -41,7 +32,8 @@ const Jss1result2 = () => {
   // function show() {
   //   sigPad.current.fromDataURL(data);
   // }
-  const puyol = JSON.parse(localStorage.getItem("Jss1resultdetails"));
+
+  // const puyol = JSON.parse(localStorage.getItem("Jss1resultdetails"));
 
   useEffect(() => {
     const headers = {

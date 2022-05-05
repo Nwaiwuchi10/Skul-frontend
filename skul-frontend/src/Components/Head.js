@@ -1,7 +1,6 @@
 import React from "react";
-import { Col, Container, Image, Row } from "react-bootstrap";
+import { Col, Image, Row } from "react-bootstrap";
 import "./Head.css";
-import { FaPhoneAlt } from "react-icons/fa";
 
 const Head = () => {
   return (

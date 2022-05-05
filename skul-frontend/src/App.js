@@ -27,6 +27,7 @@ import Ss1resultlist from "./Screens/SS1Screen/Ss1resultlist";
 import Ss1studentResult from "./Screens/SS1Screen/Ss1studentResult";
 import Adminresultclasslist from "./Screens/Adminresultclasslist";
 import CreateResultList from "./Screens/CreateResultList";
+import Jss1resultbyyear from "./Screens/Jss1resultbyyear";
 
 // import Jss1result2 from "./Screens/Jss1result2";
 
@@ -58,6 +59,7 @@ function App() {
             <Route path="/getresult" element={<GetResults />} />
             <Route path="/upload" element={<CreateResultList />} />
             <Route path="/SS1" element={<Ss1resultlist />} />
+            <Route path="/yearofresult" element={<Jss1resultbyyear />} />
             <Route path="/ss1results/:id" element={<Ss1studentResult />} />
 
             {/* <Route path="/JSS1result" element={<Jss1result2 />} /> */}

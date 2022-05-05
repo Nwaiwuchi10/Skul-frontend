@@ -1,19 +1,11 @@
 import React from "react";
-import {
-  Button,
-  Col,
-  Dropdown,
-  DropdownButton,
-  Form,
-  Row,
-} from "react-bootstrap";
+import { Dropdown, DropdownButton } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+import CheckoutSteps from "../Components/CheckoutSteps";
+
 import FormContainer from "../Components/FormContainer";
 
 const CheckResult = () => {
-  const navigate = useNavigate();
-
   return (
     <div
       style={{
@@ -22,6 +14,7 @@ const CheckResult = () => {
         borderRadius: "8px",
       }}
     >
+      <CheckoutSteps step1 step2 step3 step4 />
       <FormContainer>
         <h1 style={{ display: "flex", justifyContent: "center" }}>
           CheckResult{" "}

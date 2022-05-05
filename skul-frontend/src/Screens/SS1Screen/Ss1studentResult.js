@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
-import { useReactToPrint } from "react-to-print";
+// import { useReactToPrint } from "react-to-print";
 // import Paginate from "../Components/Paginate";
-import ReactToPrint from "react-to-print";
+// import ReactToPrint from "react-to-print";
 import { Col, Container, Image, Row, Table } from "react-bootstrap";
 
 const Ss1studentResult = () => {

@@ -7,7 +7,7 @@ import CircularIndeterminate from "../Components/Progress";
 
 import { FaEdit, FaPlus, FaTrash } from "react-icons/fa";
 import axios from "axios";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const GetResults = () => {

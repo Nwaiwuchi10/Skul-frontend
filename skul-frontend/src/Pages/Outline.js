@@ -6,7 +6,7 @@ import {
   FaUserGraduate,
   FaCashRegister,
 } from "react-icons/fa";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Button, Row } from "react-bootstrap";
 
 import { useNavigate } from "react-router-dom";
 
@@ -47,7 +47,7 @@ const Outline = () => {
           <div className="skiller-forum"> Check Results</div>
           <div className="skiller-fun">
             Login to check your result, ensure to confirm your registration to
-            avoid any issues... Thanks
+            avoid any issues.. Thanks
           </div>
           <br />
           <Button className="btn-block-fo" type="button" onClick={check}>

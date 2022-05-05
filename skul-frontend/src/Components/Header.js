@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import { FaBeer, FaAdressBook, FaAddressCard, FaUserAlt } from "react-icons/fa";
+
 import { LinkContainer } from "react-router-bootstrap";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -28,7 +28,7 @@ const Header = () => {
 
     navigate("/login");
   };
-  const id = localStorage.getItem("id");
+  // const id = localStorage.getItem("id");
   const teacher = localStorage.getItem("name1");
   // const teacher = JSON.parse(localStorage.getItem("Staff-Info"));
   const userInfo = localStorage.getItem("name");
@@ -113,9 +113,7 @@ const Header = () => {
                 </NavDropdown>
               ) : (
                 <LinkContainer to="/login">
-                  <Nav.Link>
-                    <FaUserAlt /> Student
-                  </Nav.Link>
+                  <Nav.Link>Student</Nav.Link>
                 </LinkContainer>
               )}
             </Nav>

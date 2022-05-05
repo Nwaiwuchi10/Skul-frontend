@@ -1,10 +1,9 @@
 import React from "react";
-import { Button, Dropdown, DropdownButton, Form } from "react-bootstrap";
+import { Dropdown, DropdownButton } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+
 import FormContainer from "../Components/FormContainer";
 const Adminresultclasslist = () => {
-  const navigate = useNavigate();
   return (
     <div
       style={{

@@ -1,25 +1,13 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import {
-  Button,
-  ButtonGroup,
-  Col,
-  Dropdown,
-  DropdownButton,
-  Form,
-  Row,
-} from "react-bootstrap";
-import LinkContainer from "react-router-bootstrap/LinkContainer";
+import { Dropdown, DropdownButton, Row } from "react-bootstrap";
+
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 
 import FormContainer from "../Components/FormContainer";
 
 const Reg = () => {
-  const navigate = useNavigate();
-
   const [bridals, setBridals] = useState([]);
-  const [selects, setSelects] = useState("");
 
   useEffect(() => {
     axios.get("/api/students/classes/JSS1B").then((response) => {
@@ -35,10 +23,6 @@ const Reg = () => {
     //   }
     // });
   }, []);
-
-  const handleClick = () => {
-    navigate("/JSS1A");
-  };
 
   return (
     <div>

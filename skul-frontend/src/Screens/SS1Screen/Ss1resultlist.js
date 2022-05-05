@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { LinkContainer } from "react-router-bootstrap";
-import { Table, Button, Row, Col, Container } from "react-bootstrap";
+
+import { Table, Row, Col, Container } from "react-bootstrap";
 
 // import Paginate from "../Components/Paginate";
 
-import { FaEdit, FaPlus, FaTrash } from "react-icons/fa";
 import axios from "axios";
 
 import { Link } from "react-router-dom";
@@ -14,7 +13,7 @@ const Ss1resultlist = () => {
   const [dj, setDj] = useState([]);
 
   useEffect(() => {
-    const { data } = axios.get("/api/ss1results").then((response) => {
+    axios.get("/api/ss1results").then((response) => {
       if (!response.data.hasError) {
         setDj(response.data.ss1results);
         console.log(response.data);

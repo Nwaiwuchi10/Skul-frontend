@@ -1,12 +1,11 @@
 import React from "react";
-import { Button, Dropdown, DropdownButton, Form } from "react-bootstrap";
+import { Dropdown, DropdownButton } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
+
 import FormContainer from "../Components/FormContainer";
 
 const CreateResultList = () => {
-  const navigate = useNavigate();
   const id = useParams();
 
   return (

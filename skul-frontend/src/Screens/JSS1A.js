@@ -1,26 +1,21 @@
 import React, { useEffect, useState } from "react";
-import { LinkContainer } from "react-router-bootstrap";
-import { Table, Button, Row, Col, Container } from "react-bootstrap";
+
+import { Table, Row, Col, Container } from "react-bootstrap";
 
 // import Paginate from "../Components/Paginate";
 
-import { FaEdit, FaPlus, FaTrash } from "react-icons/fa";
 import axios from "axios";
-import { useNavigate, useParams } from "react-router-dom";
 
 const JSS1A = () => {
-  const navigate = useNavigate();
   // const { id } = useParams();
   const [dj, setDj] = useState([]);
 
   useEffect(() => {
-    const { data } = axios
-      .get("/api/students/classes/JSS1A")
-      .then((response) => {
-        if (!response.data.hasError) {
-          setDj(response.data.students);
-        }
-      });
+    axios.get("/api/students/classes/JSS1A").then((response) => {
+      if (!response.data.hasError) {
+        setDj(response.data.students);
+      }
+    });
   }, []);
 
   return (

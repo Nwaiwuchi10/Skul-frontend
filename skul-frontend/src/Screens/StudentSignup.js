@@ -159,7 +159,7 @@ const StudentSignup = () => {
       </Form>
       <Row className="py-3">
         <Col>
-          A student?<Link to="/signup">Login </Link>{" "}
+          A student?<Link to="/login">Login </Link>{" "}
         </Col>
       </Row>
     </FormContainer>
