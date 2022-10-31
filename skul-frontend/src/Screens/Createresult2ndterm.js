@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 import Message from "../Components/Message";
 
 toast.configure();
-const Createjss1results = () => {
+const Createresult2ndterm = () => {
   // const { id } = useParams();
   const navigate = useNavigate();
   const [name, setName] = useState("");
@@ -90,7 +90,7 @@ const Createjss1results = () => {
     };
 
     axios
-      .post("/api/jss1results", data, {
+      .post("/api/jss1results2ndterm", data, {
         headers: headers,
       })
       .then((res) => {
@@ -343,5 +343,4 @@ const Createjss1results = () => {
   );
 };
 
-export default Createjss1results;
-// put(`/api/jss1results/${id}`
+export default Createresult2ndterm;

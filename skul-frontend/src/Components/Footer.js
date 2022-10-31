@@ -14,7 +14,7 @@ const Footer = () => {
             Copyright &copy; Praise-El Schools 2022
           </Col>
         </Row>
-        {/* <Row>
+        <Row>
           <Col
             className="text-center py-3"
             style={{ cursor: "pointer" }}
@@ -22,7 +22,7 @@ const Footer = () => {
           >
             @DJ N'CHRYS Tech
           </Col>
-        </Row> */}
+        </Row>
       </Container>
     </footer>
   );

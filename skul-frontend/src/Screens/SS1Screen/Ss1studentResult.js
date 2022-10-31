@@ -120,7 +120,7 @@ const Ss1studentResult = () => {
         </span>
 
         <Row>
-          <Col>
+          <Col style={{ position: "relative", left: "-13px" }}>
             Name: <strong>{product.name}</strong>
           </Col>
         </Row>

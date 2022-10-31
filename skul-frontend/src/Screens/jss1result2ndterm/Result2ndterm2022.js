@@ -9,14 +9,14 @@ import axios from "axios";
 
 import { Link } from "react-router-dom";
 
-const Jss1Aresultlist = () => {
+const Result2ndterm2022 = () => {
   // const { id } = useParams();
   const [dj, setDj] = useState([]);
 
   useEffect(() => {
-    axios.get("/api/jss1results/year/2022").then((response) => {
+    axios.get("api/jss1results2ndterm/year/2022").then((response) => {
       if (!response.data.hasError) {
-        setDj(response.data.jss1results);
+        setDj(response.data.jss1results2ndterm);
         console.log(response.data);
         // localStorage.setItem("id", data._id);
         localStorage.setItem("Jss1result", JSON.stringify(response.data));
@@ -49,7 +49,7 @@ const Jss1Aresultlist = () => {
           <tbody>
             {dj.map((product) => (
               <tr key={product._id}>
-                <Link to={`/jss1results/${product._id}`}>
+                <Link to={`/jss1results2ndterm/${product._id}`}>
                   {" "}
                   <td>{product.name}</td>{" "}
                 </Link>{" "}
@@ -67,4 +67,4 @@ const Jss1Aresultlist = () => {
   );
 };
 
-export default Jss1Aresultlist;
+export default Result2ndterm2022;

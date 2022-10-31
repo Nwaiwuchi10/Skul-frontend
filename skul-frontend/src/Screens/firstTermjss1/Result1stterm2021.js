@@ -9,12 +9,12 @@ import axios from "axios";
 
 import { Link } from "react-router-dom";
 
-const Jss1Aresultlist = () => {
+const Result1stterm2021 = () => {
   // const { id } = useParams();
   const [dj, setDj] = useState([]);
 
   useEffect(() => {
-    axios.get("/api/jss1results/year/2022").then((response) => {
+    axios.get("/api/jss1results/year/2021").then((response) => {
       if (!response.data.hasError) {
         setDj(response.data.jss1results);
         console.log(response.data);
@@ -67,4 +67,4 @@ const Jss1Aresultlist = () => {
   );
 };
 
-export default Jss1Aresultlist;
+export default Result1stterm2021;
